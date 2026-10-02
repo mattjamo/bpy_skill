@@ -1,10 +1,9 @@
 {
   "name": "pi-bpy-skill",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pi agent skill: build, inspect, verify and render 3D models by driving Blender (4.2-5.x) from Python - live GUI bridge or headless.",
-  "license": "GPL-3.0-or-later AND CC-BY-4.0",
+  "license": "Apache-2.0",
   "keywords": [
-    "pi-package",
     "pi-skill",
     "blender",
     "bpy",

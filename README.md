@@ -32,9 +32,8 @@ Blender GUI; headless rendering works anywhere (EEVEE needs a GL context).
 ### As a Pi package
 
 ```bash
-pi install ./path/to/bpy_skill        # local directory
-pi install npm:<name>@<version>       # npm (versioned spec is pinned)
-pi install git:<repo-url>@v0.1.0      # git (pinned by tag)
+pi install /path/to/bpy_skill                        # local directory - no publishing
+pi install git:github.com/mattjamo/bpy_skill@v0.2.0  # git (pinned by tag)
 ```
 
 `pi list` and `pi config` show and toggle discovered resources. The
@@ -48,9 +47,9 @@ Copy this directory into any Pi skills location — directories containing
 `SKILL.md` are discovered recursively:
 
 ```
-~/.pi/agent/skills/bpy/         # personal (Pi)
-~/.agents/skills/bpy/           # personal (Agent Skills convention)
-<project>/.agents/skills/bpy/   # project (loaded only after project trust)
+~/.pi/agent/skills/         # personal (Pi)
+~/.agents/skills/           # personal (Agent Skills convention)
+<project>/.agents/skills/   # project (loaded only after project trust)
 ```
 
 Start Pi and check the startup diagnostics or run `/skill:bpy`. After editing
@@ -103,5 +102,5 @@ drive it. Run it only while you are working, and send `--stop` (optionally
 
 ## License
 
-As declared in the `SKILL.md` frontmatter: code is **GPL-3.0-or-later**,
-documentation and prose are **CC-BY-4.0**.
+Apache License 2.0 (Apache-2.0) - the whole repository, code and
+documentation alike, as declared in the `SKILL.md` frontmatter.

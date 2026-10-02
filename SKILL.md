@@ -1,7 +1,7 @@
 ---
 name: bpy
 description: "Design and build 3D models in Blender by driving it with Python - from the agent. Use for: bpy / Blender scripting, building or editing 3D geometry procedurally (meshes from pydata, bmesh, curves, text, metaballs), modifiers (bevel/fillet, boolean holes, solidify, mirror, array, weld), materials/shader nodes, cameras and lighting, keyframes/animation, .blend files, scene introspection, EEVEE/Cycles/Workbench renders, preview screenshots of a model, exporting glTF/GLB/USD/OBJ/STL for game engines or printing, millimetre-accurate CAD-ish parts, and checking that a generated model is actually watertight, manifold, correctly sized and correctly oriented. Works against a running Blender GUI (live code REPL + viewport screenshots), against headless `blender -b -P`, or against pip-installed `bpy`."
-license: GPL-3.0-or-later AND CC-BY-4.0 (Blender docs quoted/summarised)
+license: Apache-2.0 (Blender docs quoted/summarised)
 compatibility: "Any OS with Blender 4.2 / 4.4 / 4.5 LTS / 5.x installed (auto-discovered), or pip `bpy` which pins exactly one CPython (5.x -> 3.13). Verified on Windows 11 + Blender 5.1.0 (adfe2921d5f3). EEVEE renders work headless when a GPU/GL context is available."
 metadata:
   verified: "executed on a real machine 2026-09-30: build -> save -> 4-angle preview -> pixel framing check -> geometry report (watertight, 80x40x56 mm, volume within 2.2% of hand calc)"
